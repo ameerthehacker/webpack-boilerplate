@@ -1,0 +1,69 @@
+{
+  "name": "webpack-boilerplate",
+  "version": "1.0.0",
+  "description": "Webpack boilerplate with vue (es6), sass with jest as testing framework",
+  "private": true,
+  "scripts": {
+    "test": "jest",
+    "build:dev": "webpack --progress",
+    "build:prod": "webpack --progress -p",    
+    "build:watch": "webpack --watch --progress",
+    "start": "node ./src/app/bin/www",
+    "dev": "nodemon -e js,css,hbs",
+    "coverage": "jest --coverage"
+  },
+  "jest": {
+    "verbose": true,
+    "globals": {
+      "NODE_ENV": "test"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ameerthehacker/webpack-boilerplate.git"
+  },
+  "keywords": [
+    "webpack",
+    "vue",
+    "sass",
+    "jest",
+    "es6"
+  ],
+  "author": "ameerthehacker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ameerthehacker/webpack-boilerplate/issues"
+  },
+  "homepage": "https://github.com/ameerthehacker/webpack-boilerplate#readme",
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "hbs": "~4.0.1",
+    "http-errors": "~1.6.2",
+    "morgan": "~1.9.0",
+    "vue": "^2.5.16"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.4.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "babel-preset-es2015": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.11",
+    "jest": "^22.4.3",
+    "node-sass": "^4.9.0",
+    "nodemon": "^1.17.3",
+    "postcss-loader": "^2.1.4",
+    "prettier": "^1.12.1",
+    "prettierrc": "0.0.0-5",
+    "reload": "^2.2.2",
+    "sass-loader": "^7.0.1",
+    "style-loader": "^0.21.0",
+    "webpack": "^3.10",
+    "webpack-cli": "^2.0.15"
+  }
+}
