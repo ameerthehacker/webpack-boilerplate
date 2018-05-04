@@ -24,6 +24,15 @@ const webpackConfig = {
 						query: {
 							presets: ['es2015']
 						}
+					},
+					{
+						loader: 'eslint-loader',
+						options: {
+							emitError: true,
+							emitWarning: true,
+							failOnError: true,
+							fix: true
+						}
 					}
 				]
 			},
